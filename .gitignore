@@ -1,0 +1,20 @@
+# Dependencies
+/vendor/
+
+# Composer
+composer.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
