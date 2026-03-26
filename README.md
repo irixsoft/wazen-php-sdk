@@ -74,7 +74,7 @@ $wazen->messages->list('session-id', ['direction' => 'outgoing', 'limit' => 10])
 $wazen->messages->get('session-id', 'message-id');
 ```
 
-### Groups (Pro+)
+### Groups
 
 ```php
 $wazen->groups->list('session-id');
@@ -86,7 +86,7 @@ $wazen->groups->manageParticipants('session-id', 'group-id', ['action' => 'add',
 $wazen->groups->sendMessage('session-id', 'group-id', ['type' => 'text', 'content' => 'Hello group!']);
 ```
 
-### Channels (Pro+)
+### Channels
 
 ```php
 $wazen->channels->create('session-id', ['name' => 'Product Updates', 'description' => 'Latest news']);
@@ -99,7 +99,7 @@ $wazen->channels->sendMessage('session-id', 'channel-id', ['type' => 'text', 'co
 // Check single number
 $wazen->contacts->check('session-id', ['phone' => '+1234567890']);
 
-// Bulk check (Pro+)
+// Bulk check
 $wazen->contacts->bulkCheck('session-id', ['phones' => ['+1234567890', '+0987654321']]);
 ```
 
